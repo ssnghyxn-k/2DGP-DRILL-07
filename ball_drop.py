@@ -37,7 +37,11 @@ class s_Ball:
         self.image = load_image('ball21x21.png')
 
 
-
+class b_Ball:
+    def __init__(self):
+        self.x, self.y = random.randint(100, 700), 599
+        self.frame = random.randint(0, 7)
+        self.image = load_image('ball41x41.png')
 
 
 def handle_events():
